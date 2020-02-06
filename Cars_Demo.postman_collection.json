@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "54732d7a-c0c6-44de-ab07-e8280f289a62",
+		"name": "Cars_Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/car/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/car/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"car",
+						"2"
+					]
+				},
+				"description": "GetAll method "
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/car/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"carName\": \"i20\",\n        \"manufactureName\": \"hyundai\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/car/getCars",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"car",
+						"getCars"
+					]
+				},
+				"description": "get car with id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/car/getCars",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"carName\": \"i20\",\n        \"manufactureName\": \"hyundai\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/car/getCars",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"car",
+						"getCars"
+					]
+				},
+				"description": "Get request with custome choice of fields to filter"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/car/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"carName\": \"breeza\",\n        \"manufactureName\": \"maruti\",\n        \"model\": \"suv\",\n        \"year\": \"2019\",\n        \"color\": \"red\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/car/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"car",
+						""
+					]
+				},
+				"description": "Post call with car object in json format"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/car/9",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"carName\": \"breeza\",\n        \"manufactureName\": \"maruti\",\n        \"model\": \"suv\",\n        \"year\": \"2020\",\n        \"color\": \"red\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/car/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"car",
+						"9"
+					]
+				},
+				"description": "PUT Method used to update existing user"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/car/9",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/car/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"car",
+						"10"
+					]
+				},
+				"description": "Delete car at specific id"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
