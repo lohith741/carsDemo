@@ -6,13 +6,15 @@
  Table Name: cars
  
  column Entries:
-	Long id;
+ 
+ ```
+	Long id
 	String car_name
 	String color
 	String manufacture_name
 	String model
 	Integer year
-
+```
 ## Methods Executed
 	
 ### Post Call :
