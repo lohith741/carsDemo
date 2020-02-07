@@ -1,4 +1,4 @@
-# carsSpringDemo
+# carsDemo
 
  ## Database Schema
  Database Name: cars_db
