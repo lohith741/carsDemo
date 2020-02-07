@@ -1,4 +1,4 @@
-"# carsSpringDemo" 
+# carsSpringDemo
 
  ## Database Schema
  Database Name: cars_db
@@ -22,7 +22,7 @@
 	Requirements:
 	car Object in request body in raw(json) format.
 	
-	```json 
+	```
 		{
 		"carName": "i20",
 		"manufactureName": "hyundai",
@@ -39,7 +39,7 @@
 	Requirements:
 	car Object in request body in raw(json) format.
 	
-	```json 
+	```
 		{
 		"carName": "i20",
 		"manufactureName": "hyundai",
@@ -70,7 +70,7 @@
 	Requirements:
 	Request json body with one or many required fields
 	
-	```json
+	```
 		{
 		"manufactureName": "hyundai",
 		"year": "2010",
