@@ -41,7 +41,7 @@ public class CarsController {
     }
 
     @PostMapping(path = "/car" ,consumes = "application/json")
-    public ResponseEntity<?> createNote(@Valid @RequestBody CarDetails car) {
+    public ResponseEntity<?> createCar(@Valid @RequestBody CarDetails car) {
         carRepository.save(car);
         JSONObject response = new JSONObject();
         response.put("message: ", "Successfully Inserted!");
@@ -49,18 +49,18 @@ public class CarsController {
     }
 
     @GetMapping("/car/{id}")
-    public CarDetails getNoteById(@PathVariable(value = "id") Long carId) {
+    public CarDetails getCarById(@PathVariable(value = "id") Long carId) {
         return carRepository.findById(carId)
                 .orElseThrow(() -> new ResourceNotFoundException("Car", "id", carId));
     }
     
     @GetMapping(path = "/car/getName" , consumes = "text/plain")
-    public List<CarDetails> getNoteByName(@RequestBody String carName) {
+    public List<CarDetails> getCarByName(@RequestBody String carName) {
         return carRepository.findByName(carName);
     }
     
     @GetMapping(path = "/car/getcolor")
-    public List<CarDetails> getNoteBycolor(@RequestParam(required = false,value = "color") String color,@RequestParam(required =  false,value = "name") String name) { 
+    public List<CarDetails> getCarBycolor(@RequestParam(required = false,value = "color") String color,@RequestParam(required =  false,value = "name") String name) { 
     	return carRepository.findBycolor(color,name);
     }
     
